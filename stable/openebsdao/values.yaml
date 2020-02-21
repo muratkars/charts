@@ -1,0 +1,53 @@
+# Default values for openebsdao.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+#rbac:
+  # Specifies whether RBAC resources should be created
+#  create: true
+#  pspEnabled: false
+
+#serviceAccount:
+#  create: true
+#  name:
+
+#release:
+  # "openebs.io/version" label for control plane components
+#  version: "1.7.0"
+
+#image:
+#  pullPolicy: IfNotPresent
+
+#defaultStorageConfig:
+#  enabled: "true"
+
+# Directory used by the OpenEBS to store debug information and so forth
+# that are generated in the course of running OpenEBS containers.
+#varDirectoryPath:
+#  baseDir: "/var/openebs"
+
+#provisioner:
+#  enabled: true
+#  image: "quay.io/openebs/openebs-k8s-provisioner"
+#  imageTag: "1.7.0"
+#  replicas: 1
+#  nodeSelector: {}
+#  tolerations: []
+#  affinity: {}
+#  healthCheck:
+#    initialDelaySeconds: 30
+#    periodSeconds: 60
+
+#cstor:
+#  pool:
+#    image: "quay.io/openebs/cstor-pool"
+#    imageTag: "1.7.0"
+#  poolMgmt:
+#    image: "quay.io/openebs/cstor-pool-mgmt"
+#    imageTag: "1.7.0"
+#  target:
+#    image: "quay.io/openebs/cstor-istgt"
+#    imageTag: "1.7.0"
+#  volumeMgmt:
+#    image: "quay.io/openebs/cstor-volume-mgmt"
+#    imageTag: "1.7.0"
